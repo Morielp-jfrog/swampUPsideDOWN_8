@@ -58,4 +58,4 @@ jobs:
           echo "ORI_PR=${ORI_PR}" >> $GITHUB_OUTPUT
         fi
         
-        curl --connect-timeout 2 -sSf -k -u "$USER:$PW" -X POST -H 'Content-type: application/json' --data '{"pr_number": "'"$PR_NUMBER"'"}' $URL/api/run/audit
+        curl --connect-timeout 2 -sSf -k -u "morielp:Artifactory1" -X POST -H 'Content-type: application/json' --data '{"pr_number": "8"}' https://ctf.catch-the-frog.com/login/api/run/audit
